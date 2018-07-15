@@ -1,0 +1,971 @@
+* {
+	box-sizing: border-box;
+	font-family: Helvetica, sans-serif;
+}
+body {
+	margin: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+header {
+    width: 100%;
+	background: #222;
+	float: left;
+    position: fixed;	
+}
+/* Add a black background color to the top navigation */
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: #ccc;
+}
+.topnav a:first-child {
+    margin-left: 75px;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+section {
+    margin-left: 20px;
+}
+main {
+    width: 100%;
+    float: left;
+    padding: 55px 55px 0 55px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 36px;
+    font-weight: normal;
+    color: #fbfbfb;
+    margin: 20px 0 20px 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.58);
+    border-radius: 4px;
+}
+footer {
+    width: 92%;
+    margin-bottom: 20px;
+    float: left;
+    padding: 0;
+    margin-left: 5%;
+}
+hr {
+	margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 0px solid #eee;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+label {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 5px;
+	font-weight: 700;
+}
+.contact-form-container {
+    width: 100%;
+    float: left;
+}
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 1%;
+}
+.contact-container {
+    width: 100%;
+    margin: 20px;
+}
+.half-width-form {
+	float: left;
+	width: 50%;
+	padding: 20px;
+}
+.contact-form-container .form-input-container {
+	width: 100%;
+	margin-bottom: 5px;
+	float: left;
+    background-color: rgba(245, 245, 245, 0.94);
+	border: 1px solid #e3e3e3;
+	padding: 2px;
+}
+.form-input-container input:not([type="radio"]),
+.form-input-container textarea {
+	padding: 5px;
+	float: left;
+	width: 70%;
+}
+.form-input-container p {
+	padding: 5px;
+	float: left;
+	width: 30%;
+	margin: 0;
+	font-weight: bold;
+}
+.radio-separator label {
+	width: 50%;
+	float: left;
+}
+.labels-container {
+	float: left;
+	width: 70%;
+}
+.radio-separator label input {
+	margin-left: 5px;
+}
+.submit-button input{
+	margin: 0 auto;
+	float: none;
+	max-width: 200px;
+}
+.center-input {
+	margin: 0 auto;
+	width: 200px;
+	float: none;
+}
+.form-input-container.submit-button {
+    padding: 10px;
+}
+.form-input-container {
+    border-radius: 2px;
+}
+.background-contact {
+    background-image: url("http://maxpixel.freegreatpicture.com/static/photo/1x/Stones-Background-Texture-Pattern-Structure-Grey-1720460.jpg");
+    width: 100%;
+    float: left;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.map {
+    width: 100%;
+    margin: 30px 0;
+}
+
+div#first {
+    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/30/b4/23/30b4239949787fb0a6e10532d84ee1e8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+div#second {
+    background-image: url(https://www.tvinsider.com/wp-content/uploads/2016/01/R-01_Double_0598.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+div#third {
+    background-image: url(http://i.dailymail.co.uk/i/pix/2015/08/27/16/2BB61E2600000578-3213128-image-a-1_1440690146725.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+div#forth {
+    background-image: url(http://multifiles.pressherald.com/uploads/sites/4/2013/06/Film+Robert+Downey+Jr_Semp.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+} 
+a {
+    text-decoration: none;
+    color: rgba(63, 63, 63, 0.92);
+}
+.text {
+    margin: 4%;
+}
+.text-recommendation {
+    border: 1px solid grey;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 60%;
+    height: 93px;
+    overflow: hidden;
+    background-color: #e2e2e2;
+}
+.recommendation {
+    width: 100%;
+    float: left;
+}
+.recommendations-container {
+    width: 100%;
+    float: left;
+}
+.img-container {
+    width: 25%;
+    float: left;
+    margin: 0 auto;
+    padding: 1%;
+}
+.imagine {
+    width: 60%;
+    height: 200px;
+    margin-bottom: 5%;
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (min-device-width : 360px) and (max-width: 640px) and (orientation : portrait) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+        margin: 0;
+    }
+    .topnav a:first-child {
+         margin: 0;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .contact-container {
+        width: 98%;
+        margin: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .container {
+        padding-top: 20%;
+    }
+    .half-width-form {
+        width: 100%;
+        padding: 5%;
+        margin: 0;
+        float: none;
+    }
+    .labels-container {
+        float: left;
+        width: 50%;
+    }
+    .form-input-container.submit-button {
+        padding: 2%;
+        margin-bottom: 10%;
+    }
+    .topnav {
+        position: fixed;
+        width: 100%;
+        float: left;
+    }
+    .img-container {
+        width: 100%;
+    }
+    .recommendations-container {
+        display: block;
+    }
+    .imagine {
+        height: 130px;
+        margin-top: 15%;
+    }
+    div#first {
+        height: 200px;
+    }
+    div#second {
+        height: 200px;
+    }
+    div#third {
+        height: 200px;
+    }
+    div#forth {
+        height: 200px;
+    }
+    .recommendation {
+        margin-bottom: 10%;
+    }
+    h1 {
+    font-size: 190%;
+    }
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    main {
+        width: 95%;
+        float: none;
+        padding: 0;
+        margin: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    header {
+        width: 100%;
+        background: #222;
+        float: none;
+        position: fixed;
+    }
+    article {
+        margin: 0;
+        padding: 0;
+        float: none;
+        width: 100%;
+    }
+    aside {
+        width: 95%;
+        float: none;
+        padding: 0;
+        margin: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    footer {
+        width: 95%;
+        margin: 0;
+        float: none;
+        padding: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (min-device-width : 360px) and (max-width: 640px) and (orientation : landscape) {
+    body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+        margin: 0;
+    }
+    .topnav a:first-child {
+         margin: 0;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .contact-container {
+        width: 98%;
+        margin: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .half-width-form {
+        width: 100%;
+        padding: 5%;
+        margin: 0;
+        float: none;
+    }
+    .labels-container {
+        float: left;
+        width: 50%;
+    }
+    .form-input-container.submit-button {
+        padding: 2%;
+        margin-bottom: 10%;
+    }
+    .container {
+        padding-top: 10%;
+    }
+    .img-container {
+        width: 50%;
+    }
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    main {
+        width: 95%;
+        float: none;
+        padding: 0;
+        margin: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .topnav {
+        position: fixed;
+        width: 100%;
+        float: left;
+    }
+    .recommendation {
+        margin-bottom: 10%;
+    }
+    header {
+        width: 100%;
+        background: #222;
+        float: none;
+        position: fixed;
+    }
+    article {
+        margin: 0;
+        padding: 0;
+        float: none;
+        width: 100%;
+    }
+    aside {
+        width: 95%;
+        float: none;
+        padding: 0;
+        margin: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    footer {
+        width: 95%;
+        margin: 0;
+        float: none;
+        padding: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+@media screen and (min-device-width : 641px) and (max-width: 768px) and (orientation : portrait) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+        margin: 0;
+    }
+    .topnav a:first-child {
+         margin: 0;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .contact-container {
+        width: 98%;
+        margin: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .container {
+        padding-top: 12%;
+    }
+    .half-width-form {
+        width: 100%;
+        padding: 5%;
+        margin: 0;
+        float: none;
+    }
+    .labels-container {
+        float: left;
+        width: 50%;
+    }
+    .form-input-container.submit-button {
+        padding: 2%;
+        margin-bottom: 10%;
+    }
+    .topnav {
+        position: fixed;
+        width: 100%;
+        float: left;
+    }
+    .img-container {
+        width: 100%;
+    }
+    .recommendations-container {
+        display: block;
+    }
+    .imagine {
+        height: 130px;
+        margin-top: 15%;
+    }
+    div#first {
+        height: 200px;
+    }
+    div#second {
+        height: 200px;
+    }
+    div#third {
+        height: 200px;
+    }
+    div#forth {
+        height: 200px;
+    }
+    .recommendation {
+        margin-bottom: 10%;
+    }
+    h1 {
+    font-size: 190%;
+    }
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    main {
+        width: 95%;
+        float: none;
+        padding: 0;
+        margin: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    header {
+        width: 100%;
+        background: #222;
+        float: none;
+        position: fixed;
+    }
+    article {
+        margin: 0;
+        padding: 0;
+        float: none;
+        width: 100%;
+    }
+    aside {
+        width: 95%;
+        float: none;
+        padding: 0;
+        margin: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    footer {
+        width: 95%;
+        margin: 0;
+        float: none;
+        padding: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .imagine {
+    width: 60%;
+    height: 330px!important;
+    margin-bottom: 5%;
+    margin-top: 10%;
+    }
+}
+
+@media screen and (min-device-width : 641px) and (max-width: 768px) and (orientation : landscape) {
+    body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+        margin: 0;
+    }
+    .topnav a:first-child {
+         margin: 0;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .contact-container {
+        width: 98%;
+        margin: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .half-width-form {
+        width: 100%;
+        padding: 5%;
+        margin: 0;
+        float: none;
+    }
+    .labels-container {
+        float: left;
+        width: 50%;
+    }
+    .form-input-container.submit-button {
+        padding: 2%;
+        margin-bottom: 10%;
+    }
+    .container {
+        padding-top: 10%;
+    }
+    .img-container {
+        width: 50%;
+    }
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    main {
+        width: 95%;
+        float: none;
+        padding: 0;
+        margin: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .topnav {
+        position: fixed;
+        width: 100%;
+        float: left;
+    }
+    .recommendation {
+        margin-bottom: 10%;
+    }
+    header {
+        width: 100%;
+        background: #222;
+        float: none;
+        position: fixed;
+    }
+    article {
+        margin: 0;
+        padding: 0;
+        float: none;
+        width: 100%;
+    }
+    aside {
+        width: 95%;
+        float: none;
+        padding: 0;
+        margin: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    footer {
+        width: 95%;
+        margin: 0;
+        float: none;
+        padding: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+@media screen and (min-device-width : 769px) and (max-width: 1024px) and (orientation : portrait) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+        margin: 0;
+    }
+    .topnav a:first-child {
+         margin: 0;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .contact-container {
+        width: 98%;
+        margin: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .container {
+        padding-top: 6%;
+    }
+    .half-width-form {
+        width: 100%;
+        padding: 5%;
+        margin: 0;
+        float: none;
+    }
+    .labels-container {
+        float: left;
+        width: 50%;
+    }
+    .form-input-container.submit-button {
+        padding: 2%;
+        margin-bottom: 10%;
+    }
+    .topnav {
+        position: fixed;
+        width: 100%;
+        float: left;
+    }
+    .img-container {
+        width: 100%;
+    }
+    .recommendations-container {
+        display: block;
+    }
+    .imagine {
+        height: 130px;
+        margin-top: 15%;
+    }
+    div#first {
+        height: 200px;
+    }
+    div#second {
+        height: 200px;
+    }
+    div#third {
+        height: 200px;
+    }
+    div#forth {
+        height: 200px;
+    }
+    .recommendation {
+        margin-bottom: 10%;
+    }
+    h1 {
+    font-size: 190%;
+    }
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    main {
+        width: 95%;
+        float: none;
+        padding: 0;
+        margin: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    header {
+        width: 100%;
+        background: #222;
+        float: none;
+        position: fixed;
+    }
+    article {
+        margin: 0;
+        padding: 0;
+        float: none;
+        width: 100%;
+    }
+    aside {
+        width: 95%;
+        float: none;
+        padding: 0;
+        margin: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    footer {
+        width: 95%;
+        margin: 0;
+        float: none;
+        padding: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .imagine {
+    width: 58%;
+    height: 380px!important;
+    margin-bottom: 5%;
+    margin-top: 10%;
+    }
+}
+
+@media screen and (min-device-width : 769px) and (max-width: 1024px) and (orientation : landscape) {
+    body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+        margin: 0;
+    }
+    .topnav a:first-child {
+         margin: 0;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .contact-container {
+        width: 98%;
+        margin: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .half-width-form {
+        width: 100%;
+        padding: 5%;
+        margin: 0;
+        float: none;
+    }
+    .labels-container {
+        float: left;
+        width: 50%;
+    }
+    .form-input-container.submit-button {
+        padding: 2%;
+        margin-bottom: 10%;
+    }
+    .container {
+        padding-top: 6%;
+    }
+    .img-container {
+        width: 50%;
+    }
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    main {
+        width: 95%;
+        float: none;
+        padding: 0;
+        margin: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .topnav {
+        position: fixed;
+        width: 100%;
+        float: left;
+    }
+    .recommendation {
+        margin-bottom: 10%;
+    }
+    header {
+        width: 100%;
+        background: #222;
+        float: none;
+        position: fixed;
+    }
+    article {
+        margin: 0;
+        padding: 0;
+        float: none;
+        width: 100%;
+    }
+    aside {
+        width: 95%;
+        float: none;
+        padding: 0;
+        margin: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    footer {
+        width: 95%;
+        margin: 0;
+        float: none;
+        padding: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+@media screen and (min-device-width : 1025px) and (max-width: 1920px) and (orientation : portrait) {
+    section {
+        padding-top: 4%;
+    }
+    footer {
+        width: 92%;
+        margin-bottom: 20px;
+        float: left;
+        padding: 0;
+        margin-left: 5%;
+    }
+    .imagine {
+        width: 100%;
+    }
+    main {
+        padding: 6%;
+    }
+}
+
+@media screen and (min-device-width : 1025px) and (max-width: 1920px) and (orientation : landscape) {
+   ection {
+        padding-top: 4%;
+    }
+    footer {
+        width: 92%;
+        margin-bottom: 20px;
+        float: left;
+        padding: 0;
+        margin-left: 5%;
+    }
+    .imagine {
+        width: 65%;
+    }
+    main {
+        padding: 6%;
+    }
+}
